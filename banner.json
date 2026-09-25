@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-37-reaction-timer",
+  "eyebrow": "PICOKIT // LESSON 37",
+  "title": "PICOKIT // REACTION TIMER",
+  "subtitle": "RANDOM LIGHT + BUTTON TIME + AUTHENTICATED HEARTBEAT",
+  "accent": "#D0FF24",
+  "dim": "#809E16",
+  "white": "#EDF6E0",
+  "cyan": "#7FD8E0",
+  "bg": "#0E1102",
+  "bg_edge": "#040500",
+  "icon": "clock",
+  "panel_status": "LIT  ·  WINDOW 3 s  ·  LAST 214 ms",
+  "chips": [
+    {
+      "label": "REACTION",
+      "value": "214 ms"
+    },
+    {
+      "label": "ARM",
+      "value": "0.5-2.5 s"
+    },
+    {
+      "label": "WINDOW",
+      "value": "3 s"
+    },
+    {
+      "label": "RADIO",
+      "value": "-28 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00037  seq 21  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 21",
+    "[+] round armed  random delay 1.4 s",
+    "[+] lit  press 214 ms  rssi -28  snr 9.0"
+  ],
+  "categories": [
+    "ARM",
+    "LIT",
+    "PRESS",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "RT-01",
+      "label": "arm",
+      "value": "random"
+    },
+    {
+      "tag": "RT-02",
+      "label": "press",
+      "value": "214 ms"
+    },
+    {
+      "tag": "RT-03",
+      "label": "lcd",
+      "value": "readout"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  ARM  ·  PRESS  ·  RADIO  ==[ REACT ]=="
+  ],
+  "layout": "split",
+  "stat": "214 ms"
+}
